@@ -1,0 +1,383 @@
+<html>
+    <head>
+        <title>
+          Disney+ Hoster
+        </title>
+        <!-- <link rel="stylesheet" href="/home/sivaganesz/Desktop/hoster/style.css"> -->
+        <link rel="icon" type="image/jpg/png" href="/home/sivaganesz/Desktop/hos img/disney.png">   
+        <!-- <link rel="stylesheet" href="/home/sivaganesz/Desktop/hoster/css/slide.css">
+        <script src="/home/sivaganesz/Desktop/hoster/myscript.js"></script> -->
+    </head>
+    <style>
+        body{
+    background-color: #0c111b;
+}
+
+.side-bar{
+    width:75px;
+    float: left;
+    margin-left: 10px;
+    position: fixed;
+}
+table{
+    height: 78;
+    
+
+}
+a{
+    text-decoration: none;
+    color: aliceblue;
+
+}
+
+.main{
+    position: fixed;
+    background-color: #0c111b;
+}
+
+.sear{
+   
+    width: 220px;
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid #aaa;
+    outline: none;
+    color: #fff;
+    text-transform: capitalize;
+    margin-left: 290px;
+}
+.btn{
+    background: #a8a027;
+    /* border: none; */
+    height: 35px;
+    border-radius: 25px;
+    width: 100px;
+    margin-left: 7px;
+    text-transform: capitalize;
+    color: #0c111b;
+    
+}
+.btn:is(:hover,:focus){
+    outline-offset: 15px;
+    background: #737a0b;
+}
+
+.log:is(:hover,:focus){
+    outline-offset: 7px;
+    background: #022c3f;
+}
+
+
+
+.log{
+    /* background: #11105e;
+    border: none;
+    
+    width:80px;
+    margin-left: 7px;
+      height: 30px;
+      float:unset
+        margin-top: 5px;
+    border-radius: 25px;
+    text-align: center;
+     */
+     background: #1c4a86;
+     margin-left: 17px;
+     /* border: none; */
+     height: 35px;
+     border-radius: 25px;
+     width: 100px;
+     text-transform: capitalize;
+}
+/* ///////
+//// */
+.im{
+    
+    margin-top: 50px;
+    border: #a8a027;
+    margin-left: 153px;   
+}
+
+.carousel-container{
+    
+    /* position: relative;
+    width: 1000px;
+    height: 250px;
+    padding: 20px ;
+    overflow-x: hidden;
+    margin-top: 80px;
+    align-items: center; */
+    position: relative;
+    width: 100%;
+    margin: auto;
+    height: 450px;
+    /* display: flex; */
+    justify-content:space-between;
+    overflow:hidden;
+    transition: 0.7s;
+    padding: 20px 0;
+    
+}
+.carousel{
+display: flex;
+width: 92%;
+height: 100%;
+position:relative;
+margin: auto;
+
+}
+
+.slider{
+
+    flex: 0 0 auto;
+    margin-right: 30px;
+    position:relative;
+    background: (0,0,0,0.5);
+    border-radius:5px;
+    width:100%;
+    height: 100%;
+    left: 0;
+    transition: 1s;
+    overflow: hidden;
+
+    
+}
+
+.slider img{
+    width: 35%;
+    min-width: 60%;
+    object-fit: cover;
+    display: block;
+    margin-left: auto;
+ 
+}
+
+.slider-content{
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    z-index:2;
+    background: linear-gradient(to right,#030b17 80%,#0c111b00);
+    color:#fff;
+    }
+.movie-title{
+    padding-left: 50px;
+    text-transform: capitalize;
+    margin-top:80px;
+}
+.movie-des{
+
+    width: 80%;
+    line-height: 30px;
+    padding: 50px;
+    margin-top: 30px;
+    opacity: 0.8;
+}
+
+
+.video-card-container{
+    position: relative;
+    width: 92%;
+    margin: auto;
+    height: 10vw;
+    display: flex;
+    justify-content:space-between;
+    margin-bottom: 20px;
+}
+.video-card{
+     position: relative;
+    min-width: calc(100% / 5 - 10px);
+    width: calc(100% / 5 - 10px);
+    height: 100%;
+    border-radius: 5px;
+    overflow: hidden;
+    background-color: #030b17;
+}
+.card-video,
+.video-card-image{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+}
+.card-video{
+    position: absolute;
+}
+.video-card:hover .video-card-image{
+    display: none;
+}
+
+#col{
+    color: aliceblue;
+}
+
+.img{
+    position: relative;
+    width: 92%;
+    margin: auto;
+    height: 15vw;
+    display: flex;
+    justify-content:space-between;
+    margin-bottom: 20px;
+    overflow:auto;
+    
+
+}
+
+/* style="margin-left: 15px;" */
+
+    </style>
+    <body>
+        
+        
+        <div  >
+            <table width="100%" class="main">
+                <tr>
+                    <td>
+                                <a href="index.html"><img src="/home/sivaganesz/Desktop/hoster/hos img/logo.png" class="side-bar"></img></a> 
+
+                <table width="380" style="margin-left: 130px;">
+                    <tr>
+                        <td width="55" >
+                            <a href="#">Tv</a>
+                        </td>
+                        <td width="75">
+                            <a href="#">Movies</a>
+                        </td>
+                        <td width="65">
+                            <a href="#">Sports</a>
+                        </td>
+                        <td width="95">
+                            <a href="#">Premium</a>
+                        </td>
+                       
+                        
+                    </tr>
+                </table>
+                <td>
+                    <input type="search" id="search" name="search" placeholder="search"  class="sear">
+                 
+                    <button class="log"><b><a href="#">Login</a></b></button>
+                    <button class="btn"><b><a href="#">Subcribe</a></b></button>
+                </td> 
+               
+                </td>
+                </tr>
+            </table>
+        </div>  
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+
+
+<div class="carousel-container">
+    <div class="carousel">
+        <div class="slider">
+            <div class="slider-content">
+                <h1 class="movie-title">Loki</h1>
+                <p class="movie-des">Loki is an American television series created by Michael Waldron for the streaming service Disney+, based on Marvel Comics featuring the character of the same name. It is the third television series in the Marvel Cinematic Universe (MCU) produced by Marvel Studios, sharing continuity with the films of the franchise.</p>         
+            </div>
+            <img src="/home/sivaganesz/Desktop/hoster/hos img/slider 1.png">
+        </div>
+    </div>
+</div>
+
+
+            <!-- //////////////////////////////////////// -->
+
+<!-- 
+            <div class="slider-container">
+
+                <div class="slides fade">
+                    <div class="slider-image"><img src="/home/sivaganesz/Downloads/hos img/slider 1.png" alt="background_1"></div>
+                </div> 
+            
+                <div class="slides fade">
+                    <div class="slider-image"><img src="/home/sivaganesz/Downloads/hos img/slider 2.png" alt="background_2"></div>
+                </div> 
+            
+                <div class="slides fade">
+                    <div class="slider-image"><img src="/home/sivaganesz/Downloads/hos img/slider 3.png" alt="background_3"></div>
+                </div> 
+            
+                <div class="slides fade">
+                    <div class="slider-image"><img src="/home/sivaganesz/Downloads/hos img/slider 4.png" alt="background_4"></div>
+                </div> 
+            
+                <div class="slides fade">
+                    <div class="slider-image"><img src="/home/sivaganesz/Downloads/hos img/slider 5.png" alt="background_4"></div>
+                </div>
+                
+    
+    
+    
+                <a class="prev" onclick="plusIndex(-1)">❮</a>
+                <a class="next" onclick="plusIndex(+1)">❯</a>
+            
+                <div class="slider-bullets" id="slider-bullets">
+                    <span class="dots" onclick="currentSlide(1)"></span>
+                    <span class="dots" onclick="currentSlide(2)"></span>
+                    <span class="dots" onclick="currentSlide(3)"></span>
+                    <span class="dots" onclick="currentSlide(4)"></span>
+                </div> 
+            
+            </div>
+     -->
+
+        <!-- <div class="carousel-container">
+            <img src="/home/sivaganesz/Downloads/hos img/slider 1.png" style="margin-left: 100px;">
+            <img src="/home/sivaganesz/Downloads/hos img/slider 2.png" style="margin-left: 133px;">
+            <img src="/home/sivaganesz/Downloads/hos img/slider 3.png" style="margin-left: 133px;">
+            <img src="/home/sivaganesz/Downloads/hos img/slider 4.png" style="margin-left: 133px;">
+            <img src="/home/sivaganesz/Downloads/hos img/slider 5.png" style="margin-left: 133px;">
+      
+        </div> -->
+<br>
+<br>
+        <div class="video-card-container">
+            
+            <div class="video-card">
+               <a href="vi1.html"><img src="/home/sivaganesz/Desktop/hoster/hos img/disney.png" class="video-card-image">
+                <video src="/home/sivaganesz/Desktop/hoster/hos vid/disney.mp4" muted loop class="card-video"></video></a>
+            </div>
+            <div class="video-card">
+                <a href="vi2.html"><img src="/home/sivaganesz/Desktop/hoster/hos img/geographic.PNG" class="video-card-image">
+                <video src="/home/sivaganesz/Desktop/hoster/hos vid/geographic.mp4" muted loop class="card-video"></video></a>
+            </div>
+            <div class="video-card">
+                <a href="vi3.html"><img src="/home/sivaganesz/Desktop/hoster/hos img/marvel.PNG" class="video-card-image">
+                <video src="/home/sivaganesz/Desktop/hoster/hos vid/marvel.mp4" muted loop class="card-video"></video></a>
+            </div>
+            <div class="video-card">
+                <a href="vi4.html"><img src="/home/sivaganesz/Desktop/hoster/hos img/pixar.PNG" class="video-card-image">
+                <video src="/home/sivaganesz/Desktop/hoster/hos vid/pixar.mp4" muted loop class="card-video"></video></a>
+            </div>
+            <div class="video-card">
+                <a href="vi5.html"><img src="/home/sivaganesz/Desktop/hoster/hos img/star-wars.png" class="video-card-image">
+                <video src="/home/sivaganesz/Desktop/hoster/hos vidstar-war.mp4" muted loop class="card-video"></video></a>
+            </div>
+        </div>
+        <br>
+<h3 id="col" style="margin-left: 60px;"> Recommand For You</h3>
+<br>
+<div class="img">
+
+
+<img src="/home/sivaganesz/Desktop/hoster/hos img/poster 1.png" style="margin-left: 10px;">
+
+<img src="/home/sivaganesz/Desktop/hoster/hos img/poster 2.png" style="margin-left: 10px;">
+<img src="/home/sivaganesz/Desktop/hoster/hos img/poster 3.png" style="margin-left: 10px;">
+<img src="/home/sivaganesz/Desktop/hoster/hos img/poster 4.png" style="margin-left: 10px;">
+<img src="/home/sivaganesz/Desktop/hoster/hos img/poster 5.png" style="margin-left: 10px;">
+<img src="/home/sivaganesz/Desktop/hoster/hos img/poster 6.png" style="margin-left: 10px;">
+<img src="/home/sivaganesz/Desktop/hoster/hos img/poster 7.png" style="margin-left: 10px;">
+<img src="/home/sivaganesz/Desktop/hoster/hos img/poster 8.png" style="margin-left: 10px;">
+<img src="/home/sivaganesz/Desktop/hoster/hos img/poster 9.png" style="margin-left: 10px;">
+<img src="/home/sivaganesz/Desktop/hoster/hos img/poster 10.png" style="margin-left: 10px;">
+<img src="/home/sivaganesz/Desktop/hoster/hos img/poster 11.png" style="margin-left: 10px;">
+    
+</div>
+    </body>
+</html
